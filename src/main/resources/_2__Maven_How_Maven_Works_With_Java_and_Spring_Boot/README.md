@@ -39,9 +39,14 @@ If you have not Installed Maven in your system then you can use maven wrapper as
 
 go to terminal >>  [C O M M A N D S]
 
+![img.png](img.png)
+
 mvn validate
 ------------    
 will validate our pom is written correctly or not. 
+
+![img_1.png](img_1.png)
+
 
 ./mvnw validate
 ---------------    
@@ -51,9 +56,19 @@ mvn compile
 -----------    
 source code will get compiled into the target folder.
 
+![img_2.png](img_2.png)
+
+![img_3.png](img_3.png)
+
+maven-compiler-plugin
+
+![img_7.png](img_7.png)
+
 mvn test
 --------
 If you have written any tests then it will run/execute.
+
+![img_4.png](img_4.png)
 
 mvn package
 -----------    
@@ -64,19 +79,34 @@ your compiled code build a jar and then you can run ur application
 - - ls  
 - - java -jar journalApp-1.0-SNAPSHOT.jar
 
+![img_5.png](img_5.png)
+
+![img_6.png](img_6.png)
+
 mvn verify
 ----------    
 for integration testing
+
+![img_8.png](img_8.png)
+
+<> maven-jar-plugin:jar
+
+![img_9.png](img_9.png)
 
 mvn install
 -----------    
 it will push our created jar into .m2 /repository folder.    
 - so maven will put jar in local repository so next time no need to downlaod the jar for other projects.
 
+![img_10.png](img_10.png)
+
 mvn deploy
 ----------    
 it will deploy
 
+![img_11.png](img_11.png)
+
 summary: simply write mvn package then it will validate, will compile, will run tests and create a jar.    
  
- 
+ Maven Plugins with goal and phases
+ ----------------------------------
