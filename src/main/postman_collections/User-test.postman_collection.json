@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "4ceaacaf-10eb-4fe6-b3dd-6ffc4e5d173f",
+		"name": "User-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34495355"
+	},
+	"item": [
+		{
+			"name": "update user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

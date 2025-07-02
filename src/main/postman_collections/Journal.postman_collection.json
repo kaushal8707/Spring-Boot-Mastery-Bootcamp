@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "68f0dd47-33d6-47d3-be35-61a0faf5ef10",
+		"name": "Journal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34495355"
+	},
+	"item": [
+		{
+			"name": "Get By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"TTTTTTTTTTTTTT\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal/id/686277651c0fdc6b42a8f7e6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal",
+						"id",
+						"686277651c0fdc6b42a8f7e6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/journal/id/68639cbfa1e69c06fe61ec80",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal",
+						"id",
+						"68639cbfa1e69c06fe61ec80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\":\"updated I am very very happy !!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal/id/686277651c0fdc6b42a8f7e6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal",
+						"id",
+						"686277651c0fdc6b42a8f7e6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

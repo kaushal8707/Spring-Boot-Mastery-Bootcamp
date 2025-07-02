@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "1976f77f-39c3-4404-9cb9-d887765462cc",
+		"name": "Journal - User Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34495355"
+	},
+	"item": [
+		{
+			"name": "create entry of a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all entries of  a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete entry by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete entry by id - username",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete entry by id - username Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/journal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"journal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
