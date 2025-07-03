@@ -27,7 +27,7 @@ public class JournalEntityService {
             journalEntry.setDate(LocalDateTime.now());
             JournalEntry saved = journalEntryRepository.save(journalEntry);
             user.getJournalEntries().add(saved);
-            user.setUserName(null);   // here exception occurred and user entity will not be saved
+            //user.setUserName(null);   // here exception occurred and user entity will not be saved
             userService.saveEntry(user);
         }catch (Exception e){
             System.out.println(e);

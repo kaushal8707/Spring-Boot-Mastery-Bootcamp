@@ -65,3 +65,4 @@ you can't find data in local db mongosh...bcz not our db is trigged to AWS
 
 
 
+
