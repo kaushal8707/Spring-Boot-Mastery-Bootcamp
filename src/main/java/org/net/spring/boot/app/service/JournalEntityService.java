@@ -28,7 +28,7 @@ public class JournalEntityService {
             JournalEntry saved = journalEntryRepository.save(journalEntry);
             user.getJournalEntries().add(saved);
             //user.setUserName(null);   // here exception occurred and user entity will not be saved
-            userService.saveEntry(user);
+            userService.saveUser(user);
         }catch (Exception e){
             System.out.println(e);
             throw new RuntimeException("An error occurred while saving the entry !!", e);
@@ -48,10 +48,18 @@ public class JournalEntityService {
         return journalEntryRepository.findById(id);
     }
 
+    @Transactional
     public void deleteById(ObjectId id, String userName){
-        User user = userService.findByUserName(userName);
-        user.getJournalEntries().removeIf(x-> x.getId().equals(id));
-        userService.saveEntry(user);
-        journalEntryRepository.deleteById(id);
+        try{
+            User user = userService.findByUserName(userName);
+            boolean removed = user.getJournalEntries().removeIf(x -> x.getId().equals(id));
+            if(removed){
+                userService.saveUser(user);
+                journalEntryRepository.deleteById(id);
+            }
+        }catch (Exception e){
+            System.out.println(e);
+            throw new RuntimeException("An error occurred while deleting the entry !!", e);
+        }
     }
 }

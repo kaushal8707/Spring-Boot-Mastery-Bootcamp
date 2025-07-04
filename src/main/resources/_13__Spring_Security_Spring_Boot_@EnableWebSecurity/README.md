@@ -1,3 +1,16 @@
+How to Test this App ?? Auth
+----------------------------
+
+First create a Uer using
+![img_31.png](img_31.png)
+
+now user got registered, each entries associated with a user.
+so, User need to authenticated to perform operations on journal entries like add entry/delete entry by id/ update entry by id/
+get all entries.
+so, while performing operations you have to authenticated and add Basic Auth Credentials
+------------------------------------------------------------------------------------
+
+
 
 Spring Basic Security
 ========================
