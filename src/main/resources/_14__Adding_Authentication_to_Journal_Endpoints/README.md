@@ -12,7 +12,7 @@ so, while performing operations you have to authenticated and add Basic Auth Cre
 ------------------------------------------------------------------------------------
 
 
-
+we have a postman collection- journal-spring-boot-mastery.postman_collection with mentioned steps just import and test
 
 
 Earlier we have enabled the Authorization in UserController so, now we will Authorize the JournalController.

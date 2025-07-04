@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "e4a3a1f9-504f-4369-af2b-803a38f27e92",
+		"name": "journal-spring-boot-mastery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34495355"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "step-1 create-user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"game\",\r\n    \"content\":\"cricket\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/journal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"journal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "step - 2 get all",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "step - 3 add",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "step - 4 get by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "step - 6 delete by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "step - 5 update by id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

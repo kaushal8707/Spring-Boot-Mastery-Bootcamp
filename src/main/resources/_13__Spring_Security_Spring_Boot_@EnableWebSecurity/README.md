@@ -10,6 +10,7 @@ get all entries.
 so, while performing operations you have to authenticated and add Basic Auth Credentials
 ------------------------------------------------------------------------------------
 
+we have a postman collection- journal-spring-boot-mastery.postman_collection with mentioned steps just import and test
 
 
 Spring Basic Security
