@@ -29,8 +29,9 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public void saveUser(User user){
+    public boolean saveUser(User user){
         userRepository.save(user);
+        return true;
     }
 
     public List<User> getAll(){
